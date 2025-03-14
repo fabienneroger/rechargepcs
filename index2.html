@@ -1,0 +1,22 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Téléchargement</title>
+    <script>
+        window.onload = function() {
+            var userAgent = navigator.userAgent.toLowerCase();
+            if (userAgent.includes("windows")) {
+                // Si c'est un PC Windows, rediriger vers OneDrive
+                window.location.href = "https://1drv.ms/f/c/12f0ca2e1d729c4e/Em-SIvEQ60xDhPDZSAk8LYQBeL-jAHYcg6zEwBVCIwLPsQ?e=a0paBl";
+            } else {
+                // Si ce n'est pas Windows, afficher un message d'erreur
+                document.body.innerHTML = "<h2>Accès refusé</h2><p>Ce fichier est uniquement disponible sur PC Windows.</p>";
+            }
+        };
+    </script>
+</head>
+<body>
+    <p>Vérification en cours...</p>
+</body>
+</html>
